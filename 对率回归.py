@@ -34,10 +34,7 @@ print('模型参数是：%s'%beta)
 print('迭代次数：%s'%n)
 #可视化分析
 import matplotlib.pyplot as plt
-f=open("sample_submission.csv")
-data=pd.read_csv(f)
-# data.values #[行][列]
-data=data.T #转置
+data=data_original.T #转置
 x1=[]
 y1=[]
 x2=[]
